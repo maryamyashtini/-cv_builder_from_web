@@ -26,3 +26,17 @@ It automatically:
 git clone https://github.com/YOUR_USERNAME/cv_builder_from_web.git
 cd cv_builder_from_web
 
+### 2.Install dependencies
+Option A: 
+conda env create -f environment.yml
+conda activate cv_builder_env
+
+Option B:
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+### 3. Set your OpenAI API key
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+jupyter notebook
